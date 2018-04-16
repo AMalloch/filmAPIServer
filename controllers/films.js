@@ -9,4 +9,8 @@ filmRouter.get('/films/:id', function(req, res){
   res.json({data: films[req.params.id]});
 })
 
+filmRouter.get('/', function(req, res) {
+  res.json(films);
+});
+
 module.exports = filmRouter;
