@@ -1,7 +1,7 @@
 var express = require('express');
 var router = new express.Router();
 
-router.use('/films', require('./films.js'));
+router.use('/', require('./films.js'));
 // router.use('/film', require('./film.js'));
 // router.use('/review', require('./review.js'));
 
